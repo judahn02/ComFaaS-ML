@@ -9,6 +9,7 @@ Learning-based scheduler for Function-as-a-Service environments. Operates only o
 **[Pipeline](#pipeline)** .
 **[Support](#support)** .
 **[Reproducibility](#reproducibility)** .
+**[Citation](#citation)** .
 
 ---
 
@@ -62,3 +63,7 @@ python ComFaaS_ML_80.1.2.py \
   --outdir 80.1.2_pureml_S1_fast
 ```
 
+## Citation
+```
+Nava, J. J., Lee, J. J., & Lee, H. (2025). Machine Learning-Augmented FaaS Scheduling on the Edge-Cloud Continuum [Conference paper]. Cloud Computing and Internet of Things (CCIOT)
+```
