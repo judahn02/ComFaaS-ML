@@ -7,6 +7,7 @@ Learning-based scheduler for Function-as-a-Service environments. Operates only o
 ---
 . **[Overview](#overview)** .
 **[Pipeline](#pipeline)** .
+**[Support](#support)** .
 **[Reproducibility](#reproducibility)** .
 
 ---
@@ -14,6 +15,10 @@ Learning-based scheduler for Function-as-a-Service environments. Operates only o
 ## Overview
 
 ComFaaS-ML processes synthetic or real request streams. Each row represents a (req_id, node_id) pair with context, resource state, network signals, and decision-time estimates. The pipeline builds a compact feature frame, trains a compute regressor, prunes to a viable candidate set, and applies a listwise/pairwise reranker to produce a final top-1 node per request.
+
+![Architecture 1](Figure_1.png)
+
+![Architecture 2](Figure_2.png)
 
 ## Pipeline
 
@@ -27,6 +32,10 @@ ComFaaS-ML processes synthetic or real request streams. Each row represents a (r
 8. Train reranker.
 9. Produce final per-request ranking.
 10. Compare with heuristic baseline.
+
+## Support
+
+To get support, sent an email to contact [at] parallelsolvit.com
 
 ## Reproducibility
 ```
