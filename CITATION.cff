@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use ComFaaS-ML in your work, please cite it as described here."
+title: "ComFaaS-ML"
+type: software
+doi: 
+
+authors:
+  - family-names: "Nava"
+    given-names: "Judah J."
+    affiliation: "Parallel Solvit LLC"
+    email: "judah@parallelsolvit.com"
+  - family-names: "Lee"
+    given-names: "Jaden Jinu"
+    affiliation: "Harvard University"
+    email: "jadenlee@college.harvard.edu"
+  - family-names: "Lee"
+    given-names: "Hanku"
+    affiliation: "Minnesota State University Moorhead"
+    email: "hanku.lee@mnstate.edu"
+
+keywords:
+  - serverless computing
+  - Function-as-a-Service
+  - learning-based scheduling
+  - function placement
+  - tail latency
+  - edge-cloud continuum
+
+preferred-citation:
+  type: conference-paper
+  title: "Machine Learning-Augmented FaaS Scheduling on the Edge-Cloud Continuum"
+  year: 2025
+  doi:
+  authors:
+    - family-names: "Nava"
+      given-names: "Judah J."
+    - family-names: "Lee"
+      given-names: "Jaden Jinu"
+    - family-names: "Lee"
+      given-names: "Hanku"
+  collection-title: "Cloud Computing and Internet of Things (CCIOT)"
+  publisher: "Association for Computing Machinery"
+  publisher-place: "New York, NY, USA"
