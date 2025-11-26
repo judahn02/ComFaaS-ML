@@ -1,7 +1,34 @@
 # ComFaaS-ML
-ComFaaS-ML is a latency-aware serverless scheduler using a compute regressor, Top-K pruner, and listwise/pairwise reranker to pick near-optimal nodes per request. It operates on decision-time features only, avoids label leakage, and scales to large clusters with fast per-request inference.
 
-## This is how to run the simulations
+
+
+Learning-based scheduler for Function-as-a-Service environments. Operates only on decision-time features, predicts compute latency, prunes the search space, reranks candidates, and selects near-optimal nodes under heterogeneous load.
+
+```
+. **[Overview](#overview)** .
+**[Pipeline](#pipeline) .
+**[Reproducibility](#reproducibility)** .
+
+```
+
+## Overview
+
+ComFaaS-ML processes synthetic or real request streams. Each row represents a (req_id, node_id) pair with context, resource state, network signals, and decision-time estimates. The pipeline builds a compact feature frame, trains a compute regressor, prunes to a viable candidate set, and applies a listwise/pairwise reranker to produce a final top-1 node per request.
+
+## Pipeline
+
+1. Generate or load dataset.
+2. Chronological split.
+3. Preprocess: feasibility mask → decision-time estimates → safe feature subset + aligned labels.
+4. Train regressor.
+5. Predict compute + total estimates.
+6. Prune with top-K selection.
+7. Align labels to pruned set.
+8. Train reranker.
+9. Produce final per-request ranking.
+10. Compare with heuristic baseline.
+
+## Reproducibility
 ```
 python ComFaaS_ML_80.1.2.py \
   --mode hybrid \
