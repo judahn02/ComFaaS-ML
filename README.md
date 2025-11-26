@@ -4,12 +4,12 @@
 
 Learning-based scheduler for Function-as-a-Service environments. Operates only on decision-time features, predicts compute latency, prunes the search space, reranks candidates, and selects near-optimal nodes under heterogeneous load.
 
-```
+---
 . **[Overview](#overview)** .
-**[Pipeline](#pipeline) .
+**[Pipeline](#pipeline)** .
 **[Reproducibility](#reproducibility)** .
 
-```
+---
 
 ## Overview
 
